@@ -8,3 +8,11 @@ def is_disarium_number(num):
         return True
     else: return False
 print(is_disarium_number(135))
+def extract_nums(s):
+    sonlar = ""
+    for i in s:
+        if i.isnumeric():
+            sonlar+=i
+    if len(sonlar) > 0:
+        return sonlar
+    else: return None
