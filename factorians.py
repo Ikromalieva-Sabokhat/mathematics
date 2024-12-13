@@ -15,3 +15,11 @@ def find_factorions(start, end):
             sonlar.append(n)
     return sonlar
 print(find_factorions(1, 500))
+
+def is_harshad(n):
+    raqamlar = [int(i) for i in str(n)]
+    print(raqamlar)
+    if n % sum(raqamlar) == 0:
+        return True
+    return False
+print(is_harshad(19))
